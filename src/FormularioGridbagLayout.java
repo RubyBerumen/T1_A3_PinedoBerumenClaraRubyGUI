@@ -19,6 +19,19 @@ class VentanaFormulario extends JFrame{
 		setVisible(true);
 	}
 	
+	
+	public void componente(JComponent c, int gx, int gy, int gw, int gh, int fill) {
+		
+		gbc.gridx = gx;
+		gbc.gridy = gy;
+		gbc.gridheight = gh;
+		gbc.gridwidth = gw;
+		gbc.fill = fill;
+		gbl.setConstraints(c, gbc);
+		add(c);
+		
+	}
+	
 }
 
 
